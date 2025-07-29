@@ -5,12 +5,18 @@ function sortear() {
     let de = parseInt(document.getElementById('de').value);
     let ate = parseInt(document.getElementById('ate').value);
 
-    // Evitar num min. > num max.
+    //Evitar num min. > num max.
     if (de >= ate) {
         alert('Campo "Do número" deve ser inferior ao campo "Até o número". Verifique!');
         return;
     }
-    
+
+    //Evitar quantidade > intevalo entre num min e num max.
+    if (quantidade > (ate - de + 1)) {
+        alert('Campo "Quantidade de números" deve ser inferior ao intervalo entre os campos "Do número" e "Até o número". Verifique!');
+        return;
+    }
+
     let sorteados = [];
     let numero;
 
