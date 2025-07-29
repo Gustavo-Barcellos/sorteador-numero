@@ -20,6 +20,7 @@ A aplicação então exibe os resultados sorteados na tela e permite reiniciar a
 - Sorteio de múltiplos números aleatórios
 - Evita repetições no sorteio
 - Evita inserção de número min. > número max.
+- Evitar quantidade > intevalo entre num min e num max.
 - Interface responsiva e acessível
 - Botão de reinício funcional que reseta campos e resultados
 
