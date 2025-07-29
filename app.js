@@ -4,10 +4,17 @@ function sortear() {
     let quantidade = parseInt(document.getElementById('quantidade').value);
     let de = parseInt(document.getElementById('de').value);
     let ate = parseInt(document.getElementById('ate').value);
+
+    // Evitar num min. > num max.
+    if (de >= ate) {
+        alert('Campo "Do número" deve ser inferior ao campo "Até o número". Verifique!');
+        return;
+    }
     
     let sorteados = [];
-    let numero
+    let numero;
 
+    //Gerar mais de um número
     for (let i = 0; i < quantidade; i++) {
         numero = numeroAleatorio (de, ate);
 
